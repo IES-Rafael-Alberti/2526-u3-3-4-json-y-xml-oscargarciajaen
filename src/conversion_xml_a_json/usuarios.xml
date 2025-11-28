@@ -1,0 +1,9 @@
+<usuario>
+    <nombre>Juan</nombre>
+    <edad>30</edad>
+    <habilidades>
+        <habilidad>Python</habilidad>
+        <habilidad>JavaScript</habilidad>
+    </habilidades>
+    <activo>true</activo>
+</usuario>
