@@ -1,1 +1,1 @@
-pytest
+xmltodict==1.0.2
