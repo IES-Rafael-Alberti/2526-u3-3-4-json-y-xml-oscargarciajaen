@@ -132,7 +132,6 @@ def mostrar_datos(datos: dict):
             print(f"ID:  {usuario["id"]}, Nombre: {usuario["nombre"]}, Edad: {usuario["edad"]}")
         print("--- Fin del Contenido ---\n")
         
-
 def main():
     """
     Función principal que realiza las operaciones de gestión de un archivo JSON.
@@ -163,6 +162,8 @@ def main():
 
     input("--- Introduce Enter para continuar ---\n")
 
+    limpiar_consola()
+
     # 3. Insertar un nuevo usuario
     nuevo_usuario = {"id": 3, "nombre": "Pedro", "edad": 40}
     insertar_usuario(datos, nuevo_usuario)
@@ -171,12 +172,16 @@ def main():
 
     input("--- Introduce Enter para continuar ---\n")
 
+    limpiar_consola()
+
     # 4. Eliminar un usuario
     eliminar_usuario(datos, id_usuario = 2)
 
     mostrar_datos(datos)
 
     input("--- Introduce Enter para continuar ---\n")
+
+    limpiar_consola()
 
     # 5. Guardar los datos de nuevo en el fichero JSON
     guardar_json(nombre_fichero, datos)
